@@ -1,0 +1,71 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="se.deluxdesigns.testappview"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dd_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <activity android:name="se.deluxdesigns.MainActivity" android:theme="@android:style/Theme.Holo" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.ProductForm" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.ProductForm" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.CategoryForm" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.CategoryForm" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.LoginActivity" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.LoginActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.LogoutActivity" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.LogoutActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.ProductList" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.ProductList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.CategoryList" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.CategoryList" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="se.deluxdesigns.OrderActivity" android:theme="@android:style/Theme.Holo">
+            <intent-filter >
+                <action android:name="se.deluxdesigns.OrderActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service android:name="se.deluxdesigns.BackgroundService"></service>
+    </application>
+	
+</manifest>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/products"
+        android:numericShortcut="1"
+        android:title="@string/products"/>
+    <item
+        android:id="@+id/category"
+        android:numericShortcut="2"
+        android:title="@string/category"/>
+    <item
+        android:id="@+id/create_product"
+        android:numericShortcut="3"
+        android:title="@string/create_product"/>
+    <item
+        android:id="@+id/create_category"
+        android:numericShortcut="4"
+        android:title="@string/create_category"/>
+    <item
+        android:id="@+id/orders"
+        android:numericShortcut="5"
+        android:title="@string/order"/>
+    <item
+        android:id="@+id/logout"
+        android:numericShortcut="6"
+        android:title="@string/logout"/>
+</menu>

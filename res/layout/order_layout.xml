@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <Button
+        android:id="@+id/thumbnail"
+        android:layout_width="64dp"
+        android:layout_height="64dp" >
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_date"
+        android:textSize="12sp"
+        android:layout_toRightOf="@id/thumbnail" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/order_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/order_date"
+        android:layout_toRightOf="@id/thumbnail" >
+    </TextView>
+    
+     <TextView
+        android:id="@+id/order_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/order_user"
+        android:layout_toRightOf="@id/thumbnail" >
+    </TextView>
+    
+      <TextView
+        android:id="@+id/order_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/order_product"
+        android:layout_toRightOf="@id/thumbnail" >
+    </TextView>
+    
+      <TextView
+        android:id="@+id/order_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:layout_below="@+id/order_product"
+        android:layout_toRightOf="@+id/order_quantity" >
+    </TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remove" 
+        android:layout_alignParentRight="true">
+        
+    </Button>
+
+</RelativeLayout>
